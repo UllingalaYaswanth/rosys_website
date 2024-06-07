@@ -695,9 +695,9 @@
 
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="col-lg-8 mt-5 mt-lg-0 px-5">
+<!-- 
+            <form action="forms/contact.jsx" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -717,7 +717,99 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Send Message</button></div> -->
+                    
+            <form id ="contactForm">
+              <div class="container-fluid py-1">
+                  <div class="container py-1">
+                      <!-- <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                          <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Contact Us</div>
+                          <h1 class="mb-4">If You Have Any Query, Please Contact Us</h1>
+                      </div> -->
+                      <div class="row justify-content-center">
+                          <div class="col-lg-7">
+                              <!-- <p class="text-center mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
+                              <div class="wow fadeIn" data-wow-delay="0.3s">
+                                  <form>
+                                      <div class="row g-3">
+                                          <div class="col-md-6">
+                                              <div class="form-floating">
+                                                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                                  <label for="name">Your Name</label>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div class="form-floating">
+                                                  <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                                  <label for="email">Your Email</label>
+                                              </div>
+                                          </div>
+                                          <div class="col-12">
+                                              <div class="form-floating">
+                                                  <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                                  <label for="subject">Subject</label>
+                                              </div>
+                                          </div>
+                                          <div class="col-12">
+                                              <div class="form-floating">
+                                                  <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" required></textarea>
+                                                  <label for="message">Message</label>
+                                              </div>
+                                          </div>
+                                          <div class="col-12">
+                                            <button class="btn btn-primary w-100 py-3" type="button" onclick="submitForm()">Send Message</button>
+
+                                          </div>
+                                          <script>
+              
+                                              
+                function submitForm() {
+                    // Fetch form data
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+            
+                    // Validate form data
+                    if (!name || !email || !subject || !message) {
+                        alert('Please fill in all fields.');
+                        return;
+                    }
+            
+                    // Construct the data object
+                    const data = {
+                        name: name,
+                        email: email,
+                        subject: subject,
+                        message: message
+                    };
+            
+                    // Send data to the server
+                    fetch('http://localhost:3000/send_email', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        // Handle response from the server
+                        console.log(data); // Log the response
+                        alert('Your form was submitted successfully to Rosys.'); // Show a success alert
+                    })
+                    .catch(error => {
+                        // Handle errors
+                        console.error('Error:', error);
+                        alert('Error: ' + error); // Show an alert with the error
+                    });
+                }
+            </script>
             </form>
 
           </div>
