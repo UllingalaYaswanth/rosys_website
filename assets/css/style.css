@@ -580,7 +580,16 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
-  font-size: 22px;
+  font-size: 20px;
+  max-width: 95%;
+  text-align: justify; /* Justifies text alignment to spread across the container */
+}
+
+.about .content p:last-child::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 /*--------------------------------------------------------------
