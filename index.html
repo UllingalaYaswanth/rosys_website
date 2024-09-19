@@ -10,8 +10,10 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/rosys_LOGO.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+  
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -51,8 +53,18 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li class="dropdown">
+            <a class="nav-link scrollto" href="#services">Services <i class="bi bi-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="AIportfolio.html">AI Powered Technology</a></li>
+              <li><a href="Drones_portfolio.html">Drones</a></li>
+              <li><a href="NFportfolio.html">Neural Farms</a></li>
+              <li><a href="DTportfolio.html">Digital Twin</a></li>
+              <li><a href="S&Dportfolio.html">Security & Disaster Management</a></li>
+              <li><a href="HMSportfolio.html">Infrastructure Health Monitoring System</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -78,31 +90,31 @@
       <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <i class="ri-store-line"></i>
+            <img src="assets/img/search.png" alt="Research Icon" style="width: 50px; height: auto;">
             <h3><a href="#">Research</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <i class="ri-bar-chart-box-line"></i>
+            <img src="assets/img/brainstorming.png" alt="Creative" style="width: 50px; height: auto;">
             <h3><a href="">Creative</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <i class="ri-calendar-todo-line"></i>
+            <img src="assets/img/solution.png" alt="Innovative" style="width: 50px; height: auto;">
             <h3><a href="">Innovative</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <i class="ri-paint-brush-line"></i>
+            <img src="assets/img/atom.png" alt="Dynamic" style="width: 50px; height: auto;">
             <h3><a href="">Dynamic</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
-            <i class="ri-database-2-line"></i>
+            <img src="assets/img/visionary.png" alt="Visionary" style="width: 50px; height: auto;">
             <h3><a href="">Visionary</a></h3>
           </div>
         </div>
@@ -133,26 +145,102 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a href="https://icdt.org.in/" target="_blank"><img src="assets/img/clients/icdt.png" class="img-fluid" alt="idct"></a></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
+ <!-- ======= Clients Section ======= -->
+ <!-- <section id="clients" class="clients">
+  <div class="container" data-aos="zoom-in">
+    <div class="clients-slider swiper">
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide"><a href="https://icdt.org.in/" target="_blank"><img src="assets/img/clients/icdt.png" class="img-fluid" alt="idct"></a></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
       </div>
-    </section><!-- End Clients Section -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>End Clients Section -->
+
+<section id="clients" class="clients">
+  <div class="marquee">
+    <img src="assets/img/clients/icdt.png" class="img-fluid" alt="icdt">
+    <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+    <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+    <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+    <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+    <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+    <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
+    <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
+    
+    <!-- Add more logos as needed -->
+  </div>
+</section>
+<style>
+/* Container for the marquee */
+.clients {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  height: 100px; /* Adjust height as needed */
+  /* background-color: #f1f1f1;  */
+}
+
+/* The marquee effect */
+.marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+/* Individual logos */
+.marquee img {
+  height: 60px; /* Adjust height as needed */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 30px; /* Gap between logos (adjust as needed) */
+  opacity: 0.5; /* Apply original style */
+  transition: opacity 0.3s; /* Transition effect */
+  filter: grayscale(100%); /* Original style */
+}
+
+/* Hover effect for logos */
+.marquee img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Pagination styles (if applicable) */
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 1rem;
+  height: 12px;
+  background-color: #ddd; 
+  opacity: 1;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgb(29, 142, 248); /* Active bullet color */
+}
+</style>
+</main>
+
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
@@ -196,53 +284,69 @@
           <p>Check our Services</p>
         </div>
     
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="portfolio-details.html">AI POWERED TECHNOLOGY</a></h4>
-              
-              <p>Our cutting-edge AI solutions empower businesses to enhance efficiency, make informed decisions, and stay ahead of the competition in today's rapidly evolving digital landscape</p>
+     
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon">
+                  <!-- Replace this with your image and adjust size -->
+                  <img src="assets/img/ai_icon.png" alt="AI Technology" style="width: 50px; height: 50px;">
+                </div>
+                <h4><a href="AIportfolio.html">AI POWERED TECHNOLOGY</a></h4>
+                <p style="text-align: center;">Our cutting-edge AI solutions empower businesses to enhance efficiency, make informed decisions, and stay ahead of the competition in today's rapidly evolving digital landscape.</p>
+              </div>
             </div>
-          </div>
+          
+          
+          
     
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-airplane"></i></div>
-              <h4><a href="portfolio-details.html">DRONES</a></h4>
+              <div class="icon">
+              <img src="assets/img/drone1.png" alt="Drone" style="width: 50px; height: 50px;">
+            </div>
+              <h4><a href="Drones_portfolio.html">DRONES</a></h4>
               <p>Explore the limitless possibilities of drone technology with our cutting-edge solutions, engineered to redefine the way we perceive and interact with the world.</p>
             </div>
           </div>
     
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="portfolio-details.html">NEURAL FARMS</a></h4>
+              <div class="icon">
+                <img src="assets/img/sprout.png" alt="neural" style="width: 50px; height: 50px;">
+                </div>
+              <h4><a href="NFportfolio.html">NEURAL FARMS</a></h4>
               <p>Our sophisticated neural form technology enables seamless interaction, customization, and adaptation, enhancing user engagement and data accuracy.</p>
             </div>
           </div>
     
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="portfolio-details.html">Digital Twin</a></h4>
+              <div class="icon">
+                <img src="assets/img/digital-twin.png" alt="digital-twin" style="width: 50px; height: 50px;"> 
+              </div>
+              <h4><a href="DTportfolio.html">Digital Twin</a></h4>
               <p>Digital Twins are revolutionizing industries by creating virtual replicas of physical assets, enabling real-time monitoring, analysis, and optimization.</p>
             </div>
           </div>
     
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-delivery"></i></div>
-              <h4><a href="portfolio-details.html">Delivery and Logistics</a></h4>
-              <p>Our advanced drone delivery systems provide seamless integration into existing logistics networks, reducing delivery times and costs while expanding service reach</p>
+              <div class="icon">
+                <img src="assets/img/shield.png" alt="security" style="width: 50px; height: 50px;">  
+              </div>
+              <h4><a href="S&Dportfolio.html">Security & Disaster Management </a></h4>
+              <p>We use drones to enhance security and manage disaster situations. Drones equipped with cameras and sensors can monitor and patrol areas for security purposes, detecting threats and gathering real-time information.</p>
             </div>
           </div>
     
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="portfolio-details.html">Divera don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+              <div class="icon">
+                <img src="assets/img/infrastructure.png" alt="infrastructure" style="width: 50px; height: 50px;">   
+              </div>
+              <h4><a href="HMSportfolio.html">Infrastructure Health Monitoring System</a></h4>
+              <p>An infrastructure health monitoring system uses sensors to track the condition of structures. By using drones equipped with high definition cameras and cutting-edge AI technology.</p>
             </div>
           </div>
     
@@ -469,7 +573,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>S.V.SATISH</h3>
+                <h3>S.K.V.SATISH</h3>
                 <h4>CEO</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -482,54 +586,13 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>PADALA LALITHA</h3>
-                <h4>DRONE PILOT</h4>
+                <h3>Dr.O.R.M Rao</h3>
+                <h4>President</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  As a pilot, I can tell you drones may be a lot of things; airplanes they are not.
+                  Integrity is the essence of everything successful.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpeg" class="testimonial-img" alt="">
-                <h3>PILLA SAI MANOHAR</h3>
-                <h4>DRONE PILOT</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Drones overall will be more impactful than I think people recognize, in positive ways to help society.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>JAIDEV</h3>
-                <h4>DRONE PILOT</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  A.I. will make it possible for the Internet to directly engage people in the real world, through robotics and drones and little machines that will do smart things by themselves.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-           
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>CHAITANYA</h3>
-                <h4>DRONE PILOT</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I think drones are a good tool to go after high-valued targets.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>ng>
               </div>
             </div><!-- End testimonial item -->
           </div>
@@ -554,10 +617,6 @@
               <div class="member-img">
                 <img src="assets/img/team/lalitha4.jpeg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -636,12 +695,12 @@
         </div>
 
         <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1129.8290339533753!2d83.32003934341711!3d17.731595098300375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3943fff93c230b%3A0xfb8c66f3de8a4f1f!2sInnovation%20Center%20for%20Drone%20Technologies!5e0!3m2!1sen!2sin!4v1715423612321!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702.9084155945633!2d83.38672886967439!3d17.8059709420323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395a4e2adebd2d%3A0x23bdee515cc52e0!2sB36%2C%20Pedda%2C%20Startup%20Village%2C%20Pedda%20Rushikonda%2C%20Rushikonda%2C%20Apiic%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530045!5e1!3m2!1sen!2sin!4v1724997169129!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe>
         </div>
-
+      
         <div class="row mt-5">
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 mt-4">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
@@ -665,128 +724,189 @@
 
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0 px-5">
-<!-- 
-            <form action="forms/contact.jsx" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div> -->
-                    
-            <form id ="contactForm">
-              <div class="container-fluid py-1">
-                  <div class="container py-1">
-                      <!-- <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
-                          <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Contact Us</div>
-                          <h1 class="mb-4">If You Have Any Query, Please Contact Us</h1>
-                      </div> -->
-                      <div class="row justify-content-center">
-                          <div class="col-lg-7">
-                              <!-- <p class="text-center mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
-                              <div class="wow fadeIn" data-wow-delay="0.3s">
-                                  <form>
-                                      <div class="row g-3">
-                                          <div class="col-md-6">
-                                              <div class="form-floating">
-                                                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                                                  <label for="name">Your Name</label>
+          <!-- <div class="col-lg-8 mt-5 mt-lg-0 px-5">
+          <form id ="contactForm">
+            <div class="container-fluid py-1">
+                <div class="container py-1">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="wow fadeIn" data-wow-delay="0.3s">
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                                <label for="name">Your Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                                <label for="email">Your Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                                <label for="subject">Subject</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" required></textarea>
+                                                <label for="message">Message</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                          <button class="btn btn-primary w-100 py-3" type="button" onclick="submitForm()">Send Message</button>
+                                        </div>
+                                        <script>                                              
+                                          function submitForm() {
+                                              // Fetch form data
+                                              const name = document.getElementById('name').value;
+                                              const email = document.getElementById('email').value;
+                                              const subject = document.getElementById('subject').value;
+                                              const message = document.getElementById('message').value;
+                                      
+                                              // Validate form data
+                                              if (!name || !email || !subject || !message) {
+                                                  alert('Please fill in all fields.');
+                                                  return;
+                                              }
+                                      
+                                              // Construct the data object
+                                              const data = {
+                                                  name: name,
+                                                  email: email,
+                                                  subject: subject,
+                                                  message: message
+                                              };
+                                      
+                                              // Send data to the server
+                                              fetch('http://localhost:3000/send_email', {
+                                                  method: 'POST',
+                                                  headers: {
+                                                      'Content-Type': 'application/json'
+                                                  },
+                                                  body: JSON.stringify(data)
+                                              })
+                                              .then(response => {
+                                                  if (!response.ok) {
+                                                      throw new Error('Network response was not ok');
+                                                  }
+                                                  return response.text();
+                                              })
+                                              .then(data => {
+                                                  // Handle response from the server
+                                                  console.log(data); // Log the response
+                                                  alert('Your form was submitted successfully to Rosys.'); // Show a success alert
+                                              })
+                                              .catch(error => {
+                                                  // Handle errors
+                                                  console.error('Error:', error);
+                                                  alert('Error: ' + error); // Show an alert with the error
+                                              });
+                                          }
+                                      </script>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div> -->
+
+                    <div class="col-lg-8 mt-5 mt-lg-0 px-5">
+                      <form id="contactForm">
+                          <div class="container-fluid py-1">
+                              <div class="container py-1">
+                                  <div class="row justify-content-center">
+                                      <div class="col-lg-16">
+                                          <div class="wow fadeIn" data-wow-delay="0.3s">
+                                              <div class="row g-3">
+                                                  <div class="col-md-6">
+                                                      <div class="form-floating">
+                                                          <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                                          <label for="name">Your Name</label>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="form-floating">
+                                                          <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                                          <label for="email">Your Email</label>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-12">
+                                                      <div class="form-floating">
+                                                          <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                                          <label for="subject">Subject</label>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-12">
+                                                      <div class="form-floating">
+                                                          <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" required></textarea>
+                                                          <label for="message">Message</label>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-12">
+                                                      <button class="btn btn-primary w-100 py-3" type="button" onclick="submitForm()">Send Message</button>
+                                                  </div>
                                               </div>
                                           </div>
-                                          <div class="col-md-6">
-                                              <div class="form-floating">
-                                                  <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                                                  <label for="email">Your Email</label>
-                                              </div>
-                                          </div>
-                                          <div class="col-12">
-                                              <div class="form-floating">
-                                                  <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-                                                  <label for="subject">Subject</label>
-                                              </div>
-                                          </div>
-                                          <div class="col-12">
-                                              <div class="form-floating">
-                                                  <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" required></textarea>
-                                                  <label for="message">Message</label>
-                                              </div>
-                                          </div>
-                                          <div class="col-12">
-                                            <button class="btn btn-primary w-100 py-3" type="button" onclick="submitForm()">Send Message</button>
-
-                                          </div>
-                                          <script>
-              
-                                              
-                function submitForm() {
-                    // Fetch form data
-                    const name = document.getElementById('name').value;
-                    const email = document.getElementById('email').value;
-                    const subject = document.getElementById('subject').value;
-                    const message = document.getElementById('message').value;
-            
-                    // Validate form data
-                    if (!name || !email || !subject || !message) {
-                        alert('Please fill in all fields.');
-                        return;
-                    }
-            
-                    // Construct the data object
-                    const data = {
-                        name: name,
-                        email: email,
-                        subject: subject,
-                        message: message
-                    };
-            
-                    // Send data to the server
-                    fetch('http://localhost:3000/send_email', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(data)
-                    })
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error('Network response was not ok');
-                        }
-                        return response.text();
-                    })
-                    .then(data => {
-                        // Handle response from the server
-                        console.log(data); // Log the response
-                        alert('Your form was submitted successfully to Rosys.'); // Show a success alert
-                    })
-                    .catch(error => {
-                        // Handle errors
-                        console.error('Error:', error);
-                        alert('Error: ' + error); // Show an alert with the error
-                    });
-                }
-            </script>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  
+                  <script>
+                      function submitForm() {
+                          // Fetch form data
+                          const name = document.getElementById('name').value;
+                          const email = document.getElementById('email').value;
+                          const subject = document.getElementById('subject').value;
+                          const message = document.getElementById('message').value;
+                  
+                          // Validate form data
+                          if (!name || !email || !subject || !message) {
+                              alert('Please fill in all fields.');
+                              return;
+                          }
+                  
+                          // Construct the data object
+                          const data = {
+                              name: name,
+                              email: email,
+                              subject: subject,
+                              message: message
+                          };
+                  
+                          // Send data to the server
+                          fetch('http://localhost:3000/send_email', {
+                              method: 'POST',
+                              headers: {
+                                  'Content-Type': 'application/json'
+                              },
+                              body: JSON.stringify(data)
+                          })
+                          .then(response => {
+                              if (!response.ok) {
+                                  throw new Error('Network response was not ok');
+                              }
+                              return response.text();
+                          })
+                          .then(data => {
+                              // Handle response from the server
+                              console.log(data); // Log the response
+                              alert('Your form was submitted successfully.'); // Show a success alert
+                          })
+                          .catch(error => {
+                              // Handle errors
+                              console.error('Error:', error);
+                              alert('Error: ' + error.message); // Show an alert with the error
+                          });
+                      }
+                  </script>
+                  
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
@@ -808,11 +928,11 @@
                 <strong>Email:</strong> info@rosysgroup.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                <a href="https://www.linkedin.com/company/rosys-virtual-solutions/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -823,19 +943,20 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Portfolio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact Us</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="AIportfolio.html">AI Powered Technology</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Drones_portfolio.html">Drones</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="NFportfolio.html">Nerual Farms</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="DTportfolio.html">Digital Twin</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="HMSportfolio.html">Infrastructure Health Monitoring System </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="S&Dportfolio.html">Security and Disaster Management</a></li>
             </ul>
           </div>
 
@@ -864,7 +985,7 @@
         <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer><!-- End Footer --><!-- End Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
